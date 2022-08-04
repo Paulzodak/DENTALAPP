@@ -8,4 +8,5 @@ export const ImageCardStyle = styled.img`
   float: ${(props) => props.float};
   padding: ${(props) => props.padding};
   margin: ${(props) => props.margin};
+  transition: ${(props) => props.transition};
 `;

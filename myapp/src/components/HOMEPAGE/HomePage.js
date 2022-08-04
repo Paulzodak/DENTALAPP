@@ -4,6 +4,9 @@ import NavBar from "./NavBar/NavBar";
 import SectionOne from "./SECTIONONE/SectionOne";
 import SectionTwo from "./SECTIONTWO/SectionTwo";
 import SectionThree from "./SECTIONTHREE/SectionThree";
+import SectionFour from "./SECTIONFOUR/SectionFour";
+import SectionSix from "./SECTIONSIX/SectionSix";
+import Footer from "./FOOTER/Footer";
 // ---------------LOGO IMPORT-------------------------------
 // import logo from "../IMAGES/Mainlogo.svg";
 // import logoshape from "../IMAGES/Logoshape.svg";
@@ -26,6 +29,9 @@ const HomePage = ({
   services,
   Text4,
   Text5,
+  Text6,
+  Text8,
+  Text9,
 }) => {
   return (
     <HomePageStyle>
@@ -51,7 +57,10 @@ const HomePage = ({
         ImageCards={ImageCards}
         Text4={Text4}
       />
-      <SectionThree Text5={Text5} />
+      <SectionThree fonts={fonts} ColorStyles={ColorStyles} Text5={Text5} />
+      <SectionFour ColorStyles={ColorStyles} Text6={Text6} />
+      <SectionSix Text8={Text8} />
+      <Footer Text9={Text9} ColorStyles={ColorStyles} />
     </HomePageStyle>
   );
 };

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-export const Header = styled.div`
+export const HeaderLink = styled.a`
   font-size: ${(props) => props.size};
   font-family: ${(props) => props.fonts};
   color: ${(props) => props.color};
@@ -10,4 +10,5 @@ export const Header = styled.div`
   box-sizing: border-box;
   display: ${(props) => props.dp};
   text-align: ${(props) => props.align};
+  text-decoration: none;
 `;
